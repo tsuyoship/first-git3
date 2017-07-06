@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/*base--------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fcfdf6; }
+
+a {
+  color: #14c0c9;
+  text-decoration: none; }
+  a:visited {
+    color: #0f949b; }
+  a:hover {
+    color: #0f949b; }
+  a:active {
+    color: #16d6e0; }
+
+.text-center {
+  text-align: center; }
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.abel {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.button-contact {
+  font-size: 20px;
+  line-height: 0;
+  display: block;
+  float: right; }
+
+/*# sourceMappingURL=style:css.map */

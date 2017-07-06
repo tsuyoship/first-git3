@@ -1,0 +1,109 @@
+
+.button-contact{
+    font-size: 20px;
+    line-height: 0;
+    display: block;
+    float:right;
+    
+    width:20px;
+    height:20px;
+    margin:20px 20px 0 0;
+    padding: 10px;
+    text-align: center;
+    color:#4c4c4c;
+    border:2px dotted #4c4c4c;
+    border-radius: 10px;
+}
+
+.uppercase,
+section h2,
+#skills h3,
+#works .works-box a .works-box-inner
+.button-readmore{
+    text-transform: uppercase;
+}
+
+.text-center{
+    text-align: center;
+}
+.abel,
+section h2
+{
+    font-family:'Abel', sans-serif; /* Google Fontsの指定 */
+}
+
+header .profile{
+    clear:both;
+    width: 60%;
+    margin:0 auto;
+    padding:60px 0;   
+}
+header .site-title{
+    font-size:1.8rem;
+    line-height: normal;
+}
+header .site-title span{
+    display: block;
+    font-size: 4.2rem;
+    color:#14c0c9;
+}
+
+.block-center{
+    display: block;
+    margin: 0 auto;
+}
+
+header .profile-icon{
+    margin: 30px auto;
+    border-radius: 50%;
+}
+header p{
+    font-size: 1.6rem;
+}
+
+section{
+    padding: 60px 0;
+}
+section .container{
+    width: 90%;
+}
+section h2{
+    font-size:3.2rem;
+}
+
+#skills{
+    background-color: #FF9999;
+}
+#skills .container{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+#skills h2{
+    margin-bottom: 60px;
+    color: #fdfcf6;
+}
+
+#skills .skill-box{
+     -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+            margin:0 10px;
+            padding: 20px;
+            
+            -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    background-color: #fdfcf6;
+}
+
+#skills i{
+    font-size: 4.5rem;
+        -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+

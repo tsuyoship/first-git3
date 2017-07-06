@@ -1,0 +1,51 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+$basecolor: #fcfdf6;
+$subcolor: #bea300;
+$keycolor: #14c0c9;
+$fontcolor: #4c4c4c;
+
+/*base--------------------------------------*/
+html{ font-size: 62.5%;}
+
+body{
+  color: $fontcolor;
+  font-size: 1.4rem;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+  background-color: $basecolor;
+}
+
+a {
+  @include link-colors($keycolor,darken($keycolor, 10%), lighten($keycolor, 5%), darken($keycolor, 10%));
+  text-decoration: none;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.block-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.button-contact{
+  font-size: 20px;
+  line-height: 0;
+  
+  display: block;
+  float: right;
+}
