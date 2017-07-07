@@ -3,49 +3,121 @@
 // font-family
 $baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
-$basecolor: #fcfdf6;
-$subcolor: #bea300;
-$keycolor: #14c0c9;
-$fontcolor: #4c4c4c;
+// colors
+$baseColor: #fdfcf6;
+$subColor: #bea300;
+$keyColor: #14c0c9;
+$fontColor: #4c4c4c;
 
-/*base--------------------------------------*/
-html{ font-size: 62.5%;}
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
 
 body{
-  color: $fontcolor;
+  color: $fontColor;
   font-size: 1.4rem;
+  font-family:$baseFontFamily;
   line-height:1.6;
-  letter-spacing: 0.1em;
-  background-color: $basecolor;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
 }
 
 a {
-  @include link-colors($keycolor,darken($keycolor, 10%), lighten($keycolor, 5%), darken($keycolor, 10%));
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
   text-decoration: none;
 }
 
-.text-center{
+/* Align
+------------------------------------------------------------*/
+.text-center {
   text-align: center;
 }
 
-.block-center{
+/* Layout
+------------------------------------------------------------*/
+.block-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Font
+------------------------------------------------------------*/
 .abel {
   font-family: 'Abel', sans-serif;
 }
-
 .uppercase {
   text-transform: uppercase;
 }
 
+// desktop
+@media (min-width: 500px) {
+
+  /* Base
+  ------------------------------------------------------------*/
+  a {
+    &:hover {
+      
+       text-decoration: underline;
+    }
+  }
+}
+
 .button-contact{
-  font-size: 20px;
-  line-height: 0;
-  
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border: 2px solid $fontColor;
+  color: $fontColor;
+  text-align: center;
   display: block;
   float: right;
+  @include border-radius(10px);
+  font-size: 20px;
+  line-height: 0;
+  margin: 20px 20px 0 0;
+  &:visited{
+    color: $fontColor;
+  }
+}
+header{
+  .profile{
+    width: 60%;
+    margin: 0 auto;
+    padding: 60px 0;
+    clear: both;
+  }
+  .site-title{
+    font-size: 1.8rem;
+    line-height: normal;
+    span{
+      display: block;
+      font-size: 4.2rem;
+      color: $keyColor;
+    }
+  }
+  .profile-icon{
+    @include border-radius(50%);
+    margin: 30px auto;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+}
+
+//desktop
+@media (min-width: 500px){
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  
+  .button-contact{
+    &:hover, &:active{
+      background-color: $fontColor;
+      color: #FFF;
+    }
+  }
 }
